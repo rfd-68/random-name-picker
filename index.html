@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Name Picker - Futuristic</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🎲 Random Name Picker</h1>
+            <p>Select names randomly with a futuristic interface</p>
+        </header>
+        
+        <main>
+            <div class="selected-name" id="selectedName">
+                <h2>Click "Pick Name" to start!</h2>
+            </div>
+            
+            <div class="controls">
+                <button class="btn btn-primary" id="pickBtn">🎲 Pick Name</button>
+            </div>
+            
+            <div class="name-list-section">
+                <h3>📝 Name List</h3>
+                <div class="add-name">
+                    <input type="text" id="newName" placeholder="Enter a new name...">
+                    <button class="btn btn-primary" id="addBtn">➕ Add</button>
+                    <button class="btn btn-danger" id="clearBtn">🗑️ Clear All</button>
+                </div>
+                <div class="name-list" id="nameList">
+                    <!-- Names will be added here dynamically -->
+                </div>
+            </div>
+            
+            <div class="stats">
+                <h3>📊 Statistics</h3>
+                <p>Names in list: <span id="nameCount">0</span></p>
+                <p>Picks made: <span id="pickCount">0</span></p>
+            </div>
+            
+            <footer class="footer">
+                <p>made by Radityafd</p>
+            </footer>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
